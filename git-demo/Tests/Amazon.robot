@@ -1,11 +1,11 @@
-# pybot -d results tests/amazon.robot
+# robot -d Results --include Smoke . Tests/Amazon.robot
 
 *** Test Cases ***
 Logged out user can search for products
-    [Tags] Smoke Products
+    [Tags]  Smoke   Products
     Amazon.Search for Products
 
 Logged out user can view a product
-    [Tags] Smoke
+    [Tags]  Smoke
     Amazon.View a Product
 
