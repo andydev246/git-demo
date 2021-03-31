@@ -13,3 +13,10 @@ View a Product
 
 Close Browser to Amazon
     Welcome.Close Browser and Clean
+
+Search for a Product while Logged Out
+  #  [Arguments] ${search_text}
+    Welcome.Search for a Product while Logged Out
+
+ Search for Chocolate While Logged Out
+    Welcome.Search for Chocolate While Logged Out

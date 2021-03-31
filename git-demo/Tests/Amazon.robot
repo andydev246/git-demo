@@ -1,13 +1,24 @@
+# robot -d Results Tests/Amazon.robot
 # robot -d Results --include Smoke . Tests/Amazon.robot
 
 *** Settings ***
 Resource    /Users/andy/code/git-demo/Resources/Amazon.robot
 
 *** Test Cases ***
-Logged out user can search for products
+#Logged out user can search for products
+#    [Tags]  Smoke   Products
+#    Amazon.Open Browser to Amazon
+ #   Amazon.Search for Products
+ #   [Arguments] ${text_test}
+ #   Amazon.Search for a Product while Logged Out
+ #   Amazon.Close Browser to Amazon
+
+Logged out user can search for chocolate
     [Tags]  Smoke   Products
     Amazon.Open Browser to Amazon
-    Amazon.Search for Products
+ #   Amazon.Search for Products
+    Amazon.Search for Chocolate While Logged Out
+ #  Amazon.Search for a Product while Logged Out
     Amazon.Close Browser to Amazon
 
 Logged out user can view a product
