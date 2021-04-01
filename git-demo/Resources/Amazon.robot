@@ -18,5 +18,11 @@ Search for a Product while Logged Out
   #  [Arguments] ${search_text}
     Welcome.Search for a Product while Logged Out
 
- Search for Chocolate While Logged Out
+Search for Chocolate While Logged Out
     Welcome.Search for Chocolate While Logged Out
+
+Press the Search Button
+    Welcome.Press the Search Button
+
+Verify in Amazon Searched Chocolate
+    Welcome.Verify in Amazon Searched Chocolate
