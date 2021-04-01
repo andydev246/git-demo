@@ -7,7 +7,7 @@ Open browser to Amazon
     Maximize Browser Window
 
 Close Browser and Clean
-    Close Browser
+    Close All Browsers
 
 View a Product Detail
     Log    "View a Product Detail"
@@ -17,4 +17,4 @@ Search for a Product while Logged Out
 
 Search for Chocolate While Logged Out
     Set Selenium Implicit Wait  3
-    Input Text  xpath://input[@id="twotabsearchtextbox"]    chocolate
+        Input Text  xpath://input[@id="twotabsearchtextbox"]    chocolate
