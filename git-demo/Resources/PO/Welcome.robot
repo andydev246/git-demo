@@ -14,9 +14,6 @@ View a Product Detail
 
 Search for a Product while Logged Out
     Log    "Search for a Product while Logged Out"
-#    [Arguments]     ${search_text}
-#    Input Keys  xpath://*[@id="twotabsearchtextbox"]    ${search_text}
-#    Press Key   xpath://*[@id="twotabsearchtextbox"]    RETURN
 
 Search for Chocolate While Logged Out
     Set Selenium Implicit Wait  3
