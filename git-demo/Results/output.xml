@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0 (Python 3.9.2 on darwin)" generated="20210401 18:01:01.738" rpa="false" schemaversion="2">
+<suite id="s1" name="Amazon" source="/Users/andy/code/git-demo/Tests/Amazon.robot">
+<test id="s1-t1" name="Logged out user can search for chocolate">
+<kw name="Open Browser to Amazon" library="Amazon">
+<kw name="Open browser to Amazon" library="Welcome">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://www.amazon.com</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210401 18:01:01.907" level="INFO">Opening browser 'firefox' to base url 'http://www.amazon.com'.</msg>
+<msg timestamp="20210401 18:01:01.908" level="INFO">Firefox driver log is always forced to to: /Users/andy/code/git-demo/Results/geckodriver-78.log</msg>
+<status status="PASS" starttime="20210401 18:01:01.907" endtime="20210401 18:01:09.757"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210401 18:01:09.758" endtime="20210401 18:01:10.245"/>
+</kw>
+<status status="PASS" starttime="20210401 18:01:01.907" endtime="20210401 18:01:10.245"/>
+</kw>
+<status status="PASS" starttime="20210401 18:01:01.906" endtime="20210401 18:01:10.245"/>
+</kw>
+<kw name="Search for Chocolate While Logged Out" library="Amazon">
+<kw name="Search for Chocolate While Logged Out" library="Welcome">
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>3</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20210401 18:01:10.247" endtime="20210401 18:01:10.251"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id="twotabsearchtextbox"]</arg>
+<arg>chocolate</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210401 18:01:10.252" level="INFO">Typing text 'chocolate' into text field 'xpath://input[@id="twotabsearchtextbox"]'.</msg>
+<status status="PASS" starttime="20210401 18:01:10.251" endtime="20210401 18:01:10.292"/>
+</kw>
+<status status="PASS" starttime="20210401 18:01:10.247" endtime="20210401 18:01:10.292"/>
+</kw>
+<status status="PASS" starttime="20210401 18:01:10.246" endtime="20210401 18:01:10.292"/>
+</kw>
+<kw name="Press the Search Button" library="Amazon">
+<kw name="Press the Search Button" library="Welcome">
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>3</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20210401 18:01:10.294" endtime="20210401 18:01:10.296"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://input[@id="nav-search-submit-button"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210401 18:01:10.297" level="INFO">Clicking element 'xpath://input[@id="nav-search-submit-button"]'.</msg>
+<status status="PASS" starttime="20210401 18:01:10.296" endtime="20210401 18:01:20.306"/>
+</kw>
+<status status="PASS" starttime="20210401 18:01:10.293" endtime="20210401 18:01:20.307"/>
+</kw>
+<status status="PASS" starttime="20210401 18:01:10.293" endtime="20210401 18:01:20.307"/>
+</kw>
+<kw name="Verify in Amazon Searched Chocolate" library="Amazon">
+<kw name="Verify in Amazon Searched Chocolate" library="Welcome">
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>3</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20210401 18:01:20.308" endtime="20210401 18:01:20.311"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${text_from_span}</var>
+<arg>css:.a-color-state</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210401 18:01:20.358" level="INFO">${text_from_span} = "chocolate"</msg>
+<status status="PASS" starttime="20210401 18:01:20.311" endtime="20210401 18:01:20.359"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${text_from_span}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20210401 18:01:20.359" level="INFO">"chocolate"</msg>
+<status status="PASS" starttime="20210401 18:01:20.359" endtime="20210401 18:01:20.359"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>"chocolate"</arg>
+<arg>${text_from_span}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20210401 18:01:20.359" endtime="20210401 18:01:20.360"/>
+</kw>
+<status status="PASS" starttime="20210401 18:01:20.308" endtime="20210401 18:01:20.360"/>
+</kw>
+<status status="PASS" starttime="20210401 18:01:20.307" endtime="20210401 18:01:20.360"/>
+</kw>
+<kw name="Close Browser to Amazon" library="Amazon">
+<kw name="Close Browser and Clean" library="Welcome">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20210401 18:01:20.361" endtime="20210401 18:01:20.914"/>
+</kw>
+<status status="PASS" starttime="20210401 18:01:20.361" endtime="20210401 18:01:20.915"/>
+</kw>
+<status status="PASS" starttime="20210401 18:01:20.360" endtime="20210401 18:01:20.915"/>
+</kw>
+<tag>Products</tag>
+<tag>Smoke</tag>
+<status status="PASS" starttime="20210401 18:01:01.905" endtime="20210401 18:01:20.915"/>
+</test>
+<status status="PASS" starttime="20210401 18:01:01.739" endtime="20210401 18:01:20.916"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Products</stat>
+<stat pass="1" fail="0" skip="0">Smoke</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Amazon">Amazon</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
