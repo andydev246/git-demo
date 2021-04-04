@@ -1,4 +1,5 @@
 *** Settings ***
+
 Resource    ../Resources/PO/Welcome.robot
 
 *** Keywords ***
