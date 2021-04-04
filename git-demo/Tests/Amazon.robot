@@ -2,7 +2,7 @@
 # robot -d Results --include Smoke . Tests/Amazon.robot
 
 *** Settings ***
-Resource    /Users/andy/code/git-demo/Resources/Amazon.robot
+Resource    ../Resources/Amazon.robot
 #Suite Teardown   Suite shutdown
 
 *** Test Cases ***

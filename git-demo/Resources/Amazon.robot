@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    /Users/andy/code/git-demo/Resources/PO/Welcome.robot
+Resource    ../Resources/PO/Welcome.robot
 
 *** Keywords ***
 Open Browser to Amazon
