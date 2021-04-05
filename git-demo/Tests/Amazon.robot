@@ -1,5 +1,5 @@
 # robot -d Results Tests/Amazon.robot
-# robot -d Results --include Smoke . Tests/Amazon.robot
+# robot -d Results -i Smoke . Tests/Amazon.robot
 
 *** Settings ***
 Resource    ../Resources/Amazon.robot

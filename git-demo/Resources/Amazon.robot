@@ -1,5 +1,6 @@
-*** Settings ***
+#Amazon Application page
 
+*** Settings ***
 Resource    ../Resources/PO/Welcome.robot
 
 *** Keywords ***

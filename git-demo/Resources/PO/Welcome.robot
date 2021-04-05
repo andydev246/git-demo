@@ -1,3 +1,5 @@
+#Page Object model object (PO) for Welcome page
+
 *** Settings ***
 Library     SeleniumLibrary
 
